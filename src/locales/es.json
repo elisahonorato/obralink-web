@@ -5,14 +5,15 @@
     "guestbook_link": "Libro de visitas",
     "products_link": "Portafolio",
     "sign_in_link": "Iniciar sesión",
-    "sign_up_link": "Registrarse"
+    "sign_up_link": "Registrarse",
+    "demo_link": "Agenda una demo"
   },
   "BaseTemplate": {
     "description": "Código base para Next.js con Tailwind CSS",
     "made_with": "Hecho con"
   },
   "Index": {
-    "meta_title": "Presentación de Next.js Boilerplate",
+    "meta_title": "Obralink | Construir con precisión",
     "meta_description": "Next.js Boilerplate es el código base perfecto para tu proyecto. Construye tu aplicación React con el framework Next.js."
   },
   "Guestbook": {

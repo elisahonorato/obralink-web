@@ -1,7 +1,5 @@
 import { getTranslations } from 'next-intl/server';
 
-import { Sponsors } from '@/components/Sponsors';
-
 export async function generateMetadata(props: { params: { locale: string } }) {
   console.log('props.params.locale', props.params.locale);
   const t = await getTranslations({
@@ -18,7 +16,11 @@ export async function generateMetadata(props: { params: { locale: string } }) {
 export default function Index() {
   return (
     <>
-      <Sponsors />
+      <div className="text-center">
+        <h1 className="text-4xl font-bold p-5">Welcome to the index page</h1>
+        <p className="text-lg">This is the index page content</p>
+      </div>
+
 
     </>
   );
