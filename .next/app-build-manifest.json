@@ -20,6 +20,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/(unauth)/layout.js"
+    ],
+    "/[locale]/(unauth)/products/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/(unauth)/products/page.js"
+    ],
+    "/[locale]/(unauth)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/(unauth)/contact/page.js"
     ]
   }
 }
