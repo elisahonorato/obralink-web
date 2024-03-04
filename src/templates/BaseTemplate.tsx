@@ -1,13 +1,7 @@
-import { useTranslations } from 'next-intl';
-
-import { AppConfig } from '@/utils/AppConfig';
-
 const BaseTemplate = (props: {
   nav: React.ReactNode;
   children: React.ReactNode;
 }) => {
-  const t = useTranslations('BaseTemplate');
-
   return (
     <div className="w-full px-1 text-gray-700 antialiased">
       <div className="mx-auto px-2 sm:px-20">
@@ -21,7 +15,7 @@ const BaseTemplate = (props: {
           </div>
         </header>
 
-        <main className=''>{props.children}</main>
+        <main>{props.children}</main>
 
       </div>
     </div>

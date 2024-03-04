@@ -3,7 +3,7 @@
     "home_link": "Inicio",
     "contact_link": "Contacto",
     "guestbook_link": "Libro de visitas",
-    "products_link": "Portafolio",
+    "products_link": "Productos",
     "sign_in_link": "Iniciar sesión",
     "sign_up_link": "Registrarse",
     "demo_link": "Agenda una demo"
@@ -14,7 +14,9 @@
   },
   "Index": {
     "meta_title": "Obralink | Construir con precisión",
-    "meta_description": "Next.js Boilerplate es el código base perfecto para tu proyecto. Construye tu aplicación React con el framework Next.js."
+    "meta_description": "ObraLink es una compañía de tecnología cuyo propósito es el de enriquecer y transformar el trabajo del constructor a través de tecnología.",
+    "title": "Automatizamos la gestión de la construcción a través de",
+    "solutions": "las personas, los procesos, la tecnología, el software, la innovación"
   },
   "About": {
     "meta_title": "Obralink | Acerca de",
