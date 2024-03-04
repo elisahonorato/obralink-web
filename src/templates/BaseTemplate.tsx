@@ -10,8 +10,8 @@ const BaseTemplate = (props: {
 
   return (
     <div className="w-full px-1 text-gray-700 antialiased">
-      <div className="">
-        <header className="border-b border-gray-300 mt-10">
+      <div className="mx-auto px-2 sm:px-20">
+        <header className="mt-10 py-10">
           <div className="flex justify-between">
             <nav>
               <ul className="">
@@ -21,7 +21,7 @@ const BaseTemplate = (props: {
           </div>
         </header>
 
-        <main className='mx-auto px-2 sm:px-20'>{props.children}</main>
+        <main className=''>{props.children}</main>
 
       </div>
     </div>

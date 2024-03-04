@@ -16,8 +16,8 @@ export async function generateMetadata(props: { params: { locale: string } }) {
 export default function Index() {
   return (
     <>
-      <div className="text-center">
-        <h1 className="text-4xl font-bold p-5">Welcome to the index page</h1>
+      <div className="text-start">
+        <h1 className="text-4xl font-bold">Welcome to the index page</h1>
         <p className="text-lg">This is the index page content</p>
       </div>
 
