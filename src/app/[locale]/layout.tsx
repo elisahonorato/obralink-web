@@ -6,6 +6,24 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 import { AppConfig } from '@/utils/AppConfig';
 
+
+import { Space_Grotesk, Open_Sans } from 'next/font/google';
+
+
+const openSans = Space_Grotesk({
+  subsets: ['latin'],
+  display: 'swap',
+  //👇 Add variable to our object
+  variable: '--font-display',
+})
+
+//👇 Configure the object for our second font
+const robotoMono = Open_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-body',
+})
+
 export const metadata: Metadata = {
   icons: [
     {
@@ -42,7 +60,7 @@ export default function RootLayout(props: {
   const messages = useMessages();
 
   return (
-    <html lang={props.params.locale}>
+    <html lang={props.params.locale} className={`${openSans.variable} ${robotoMono.variable} font-body`} >
       <body>
         <NextIntlClientProvider
           locale={props.params.locale}

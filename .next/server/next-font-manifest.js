@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/Elisa/Desktop/work/obralink/app/obralink-web/src/app/[locale]/layout\":[\"static/media/3d9ea938b6afa941-s.p.woff2\",\"static/media/2d141e1a38819612-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

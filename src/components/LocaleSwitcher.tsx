@@ -7,6 +7,7 @@ import { usePathname, useRouter } from '@/libs/i18nNavigation';
 import { AppConfig } from '@/utils/AppConfig';
 
 export default function LocaleSwitcher() {
+
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
