@@ -3,15 +3,13 @@ import { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 
 interface TextChangeProps {
-  startText: string;
   texts: string[];
   className?: string;
-  classChange?: string;
   id: string;
   velocity?: number;
 }
 
-export default function TextChange({ startText, texts, className, classChange, id, velocity = 0.5 }: TextChangeProps) {
+export default function TextChange({ texts, className, id, velocity = 0.5 }: TextChangeProps) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [displayedLetters, setDisplayedLetters] = useState('');
@@ -37,7 +35,7 @@ export default function TextChange({ startText, texts, className, classChange, i
 
     let currentIndex = 0;
     const textTypingAnimation = gsap.to({}, {
-      duration: 5,
+      duration: velocity / displayedText.length * 2,
       repeat: displayedText.length - 1,
       onUpdate: () => {
         setDisplayedLetters(displayedText.substring(0, currentIndex + 1));
@@ -53,17 +51,15 @@ export default function TextChange({ startText, texts, className, classChange, i
   useEffect(() => {
     if (!texts[currentTextIndex]) return;
 
-    setDisplayedText(texts[currentTextIndex] + " ");
+    setDisplayedText(texts[currentTextIndex] + "  ");
 
     return () => {
-      setDisplayedText('');
+      setDisplayedText(' ');
     };
   }, [currentTextIndex, texts]);
 
   return (
-    <h1 id={id} className={className}>
-      {startText + " "}
-      <span className={classChange}>{displayedLetters}</span>
-    </h1>
+      <span id={id} className={className}>{displayedLetters}</span>
+
   );
 }

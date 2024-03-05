@@ -1,12 +1,13 @@
 import TextChange from '@/components/animations/TextChange';
-import Typewriter from '@/components/animations/Typewritter';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import { ColoredLinkButton } from '@/components/customElements/Button/LinkButton';
+
+
 
 
 
 export async function generateMetadata(props: { params: { locale: string } }) {
-  console.log('props.params.locale', props.params.locale);
   const t = await getTranslations({
     locale: props.params.locale,
     namespace: 'Index',
@@ -26,18 +27,29 @@ export default function Index() {
   const words = phrase.split(',').map(word => word.trim());
 
 
+
   return (
     <>
       <div className="">
-        <TextChange
-          startText={t('title')}
+        <h1 className="text-4xl sm:text-6xl w-1/2 sm:mt-20 mt-10">
+          {t('title')}
+          <br />
+          <TextChange
           texts={words}
           id="typewriter"
-          className="text-6xl w-1/2 text-start mt-20"
-          classChange="text-6xl font-bold"
-          velocity={1}
+          className="text-4xl sm:text-6xl font-bold"
+          velocity={2}
         />
+        </h1>
+        <div className='mt-10'>
+          <ColoredLinkButton href="/contact/" colorIntensity='dark'>{t('cta')}</ColoredLinkButton>
+
+        </div>
+        
+
+        
       </div>
+
 
 
     </>

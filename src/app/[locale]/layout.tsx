@@ -7,15 +7,16 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { AppConfig } from '@/utils/AppConfig';
 
 
-import { Space_Grotesk, Open_Sans } from 'next/font/google';
+import { Poppins, Open_Sans } from 'next/font/google';
 
 
-const openSans = Space_Grotesk({
-  subsets: ['latin'],
-  display: 'swap',
-  //👇 Add variable to our object
-  variable: '--font-display',
+const poppins = Poppins({
+  weight: "500",
+  variable: "--font-heading",
+  display: "swap",
+  subsets: ["latin"],
 })
+
 
 //👇 Configure the object for our second font
 const robotoMono = Open_Sans({
@@ -60,7 +61,7 @@ export default function RootLayout(props: {
   const messages = useMessages();
 
   return (
-    <html lang={props.params.locale} className={`${openSans.variable} ${robotoMono.variable} font-body`} >
+    <html lang={props.params.locale} className={`${poppins.variable} ${robotoMono.variable} font-body`} >
       <body>
         <NextIntlClientProvider
           locale={props.params.locale}

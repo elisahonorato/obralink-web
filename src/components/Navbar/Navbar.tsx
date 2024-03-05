@@ -4,6 +4,7 @@ import Image from 'next/image';
 import LocaleSwitcher from '../Switchers/LocaleSwitcher';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { ColoredLinkButton, RegularLinkButton } from '../customElements/Button/LinkButton';
 
 export default function Navbar() {
   const t = useTranslations('RootLayout');
@@ -30,20 +31,19 @@ export default function Navbar() {
 
   const links = (
     <>
-      <Link href="/contact/" className="border-none text-gray-700 hover:text-gray-900">
+      <RegularLinkButton href="/contact/">
         {t('contact_link')}
-      </Link>
-      <Link href="/products/" className="border-none text-gray-700 hover:text-gray-900">
+      </RegularLinkButton>
+      <RegularLinkButton href="/products/" className="border-none text-gray-700 hover:text-gray-900">
         {t('products_link')}
-      </Link>
-      
+      </RegularLinkButton>
+      <RegularLinkButton href="/blog/" className="border-none text-gray-700 hover:text-gray-900">
+        {t('blog_link')}
+      </RegularLinkButton>
       <LocaleSwitcher />
-      <a href="https://proxy.obralink.com/system/dashboard/manager/console/login/" className="btn-primary px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+      <ColoredLinkButton href="https://proxy.obralink.com/system/dashboard/manager/console/login/" colorIntensity="light">
         {t('sign_up_link')}
-      </a>
-      <button className="btn-secondary px-4 py-2 rounded-lg bg-gray-600 text-white hover:bg-gray-700">
-        {t('demo_link')}
-      </button>
+      </ColoredLinkButton>
 
     </>
   );

@@ -5,9 +5,23 @@ export default {
   theme: {
     fontFamily: {
       // 👇 Add CSS variables
-      display: ["var(--font-display)"],
+      heading: ["var(--font-heading)"],
       body: ["var(--font-body)"],
     },
+    colors: {
+      primary: {
+        light: "#FFFFFF",
+        DEFAULT: "#FFD700",
+        dark: "#000000",
+      },
+      colored: {
+        light: "#FFD700",
+        dark: "#1B5DE5",
+      },
+
+    },
+
+
     
 
   },

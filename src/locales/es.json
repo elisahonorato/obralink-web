@@ -6,7 +6,8 @@
     "products_link": "Productos",
     "sign_in_link": "Iniciar sesión",
     "sign_up_link": "Registrarse",
-    "demo_link": "Agenda una demo"
+    "demo_link": "Agenda una demo",
+    "blog_link": "Blog"
   },
   "BaseTemplate": {
     "description": "Código base para Next.js con Tailwind CSS",
@@ -16,7 +17,8 @@
     "meta_title": "Obralink | Construir con precisión",
     "meta_description": "ObraLink es una compañía de tecnología cuyo propósito es el de enriquecer y transformar el trabajo del constructor a través de tecnología.",
     "title": "Automatizamos la gestión de la construcción a través de",
-    "solutions": "las personas, los procesos, la tecnología, el software, la innovación"
+    "solutions": "las personas, los procesos, la tecnología, el software, la innovación",
+    "cta": "Agenda una demo"
   },
   "About": {
     "meta_title": "Obralink | Acerca de",
@@ -39,24 +41,21 @@
     "error_reporting_powered_by": "Reporte de errores impulsado por",
     "coverage_powered_by": "Cobertura de código impulsada por"
   },
-  "SignIn": {
-    "meta_title": "Iniciar sesión",
-    "meta_description": "Inicia sesión en tu cuenta fácilmente."
+  "Blog": {
+    "meta_title": "Obralink | Blog",
+    "meta_description": "Welcome to my blog page!",
+    "presentation": "Welcome to my blog page! Here you will find a carefully curated collection of my thoughts and ideas. Through this blog, I'm to showcase my expertise, creativity, and the value I can bring to your projects.",
+    "blog_name": "Blog {name}",
+    "log_management_powered_by": "Log management powered by",
+    "by": "Por"
+
   },
-  "SignUp": {
-    "meta_title": "Registrarse",
-    "meta_description": "Crea una cuenta sin esfuerzo con nuestro proceso de registro intuitivo."
-  },
-  "Dashboard": {
-    "meta_title": "Tablero",
-    "hello_message": "¡Hola {email}!"
-  },
-  "UserProfile": {
-    "meta_title": "Perfil de usuario"
-  },
-  "DashboardLayout": {
-    "dashboard_link": "Tablero",
-    "user_profile_link": "Gestionar tu cuenta",
-    "sign_out": "Cerrar sesión"
+  "BlogSlug": {
+    "meta_title": "Obralink | Blog {slug}",
+    "meta_description": "Blog {slug} description",
+    "header": "Blog {slug}",
+    "content": "Created a set of promotional materials and branding elements for a corporate event. Crafted a visually unified theme, encompassing a logo, posters, banners, and digital assets. Integrated the client's brand identity while infusing it with a contemporary and innovative approach. Garnered favorable responses from event attendees, resulting in a successful event with heightened participant engagement and increased brand visibility.",
+    "error_reporting_powered_by": "Error reporting powered by",
+    "coverage_powered_by": "Code coverage powered by"
   }
 }

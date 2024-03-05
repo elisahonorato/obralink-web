@@ -6,7 +6,8 @@
     "products_link": "Products",
     "sign_in_link": "Sign in",
     "sign_up_link": "Sign up",
-    "demo_link": "Request a demo"
+    "demo_link": "Request a demo",
+    "blog_link": "Blog"
   },
   "BaseTemplate": {
     "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
@@ -16,7 +17,8 @@
     "meta_title": "Obralink | Build with precision",
     "meta_description": "ObraLink is a technology company whose purpose is to enrich and transform the builder's work through technology.",
     "title": "We automate the construction through",
-    "solutions": "people, processes, technology, software, innovation"
+    "solutions": "people, processes, technology, software, innovation",
+    "cta": "Request a demo"
   },
   "About": {
     "meta_title": "Obralink | About",
@@ -39,24 +41,22 @@
     "error_reporting_powered_by": "Error reporting powered by",
     "coverage_powered_by": "Code coverage powered by"
   },
-  "SignIn": {
-    "meta_title": "Sign in",
-    "meta_description": "Seamlessly sign in to your account with our user-friendly login process."
+  "Blog": {
+    "meta_title": "Obralink | Blog",
+    "meta_description": "Welcome to my blog page!",
+    "presentation": "Welcome to my blog page! Here you will find a carefully curated collection of my thoughts and ideas. Through this blog, I'm to showcase my expertise, creativity, and the value I can bring to your projects.",
+    "blog_name": "Blog {name}",
+    "log_management_powered_by": "Log management powered by",
+    "by": "By"
+    
   },
-  "SignUp": {
-    "meta_title": "Sign up",
-    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
-  },
-  "Dashboard": {
-    "meta_title": "Dashboard",
-    "hello_message": "Hello {email}!"
-  },
-  "UserProfile": {
-    "meta_title": "User Profile"
-  },
-  "DashboardLayout": {
-    "dashboard_link": "Dashboard",
-    "user_profile_link": "Manage your account",
-    "sign_out": "Sign out"
+  "BlogSlug": {
+    "meta_title": "Obralink | Blog {slug}",
+    "meta_description": "Blog {slug} description",
+    "header": "Blog {slug}",
+    "content": "Created a set of promotional materials and branding elements for a corporate event. Crafted a visually unified theme, encompassing a logo, posters, banners, and digital assets. Integrated the client's brand identity while infusing it with a contemporary and innovative approach. Garnered favorable responses from event attendees, resulting in a successful event with heightened participant engagement and increased brand visibility.",
+    "error_reporting_powered_by": "Error reporting powered by",
+    "coverage_powered_by": "Code coverage powered by"
   }
 }
+

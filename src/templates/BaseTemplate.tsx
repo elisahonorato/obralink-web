@@ -8,7 +8,7 @@ const BaseTemplate = (props: {
         <header className="mt-10 py-10">
           <div className="flex justify-between">
             <nav>
-              <ul className="">
+              <ul className="font-heading">
                 {props.nav}
               </ul>
             </nav>
