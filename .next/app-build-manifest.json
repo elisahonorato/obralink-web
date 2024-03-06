@@ -21,11 +21,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/(unauth)/layout.js"
     ],
-    "/[locale]/(unauth)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/(unauth)/contact/page.js"
-    ],
     "/[locale]/(unauth)/products/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -36,20 +31,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/(unauth)/products/[slug]/page.js"
     ],
+    "/[locale]/(unauth)/clients/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/(unauth)/clients/page.js"
+    ],
     "/[locale]/(unauth)/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/(unauth)/blog/page.js"
-    ],
-    "/[locale]/(unauth)/blog/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/(unauth)/blog/[slug]/page.js"
-    ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
     ]
   }
 }

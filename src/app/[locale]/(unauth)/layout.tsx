@@ -9,7 +9,7 @@ export default function Layout(props: { children: React.ReactNode }) {
         <Navbar/>
       }
     >
-      <div className="py-5 text-xl [&_p]:my-6">{props.children}</div>
+      {props.children}
     </BaseTemplate>
   );
 }

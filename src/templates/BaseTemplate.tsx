@@ -3,8 +3,8 @@ const BaseTemplate = (props: {
   children: React.ReactNode;
 }) => {
   return (
-    <div className="w-full px-1 text-gray-700 antialiased">
-      <div className="mx-auto px-2 sm:px-20">
+    <div className="w-full h-full">
+      <div className="">
         <header className="mt-10 py-10">
           <div className="flex justify-between">
             <nav>
@@ -15,7 +15,7 @@ const BaseTemplate = (props: {
           </div>
         </header>
 
-        <main>{props.children}</main>
+        <main className="px-10 sm:px-20">{props.children}</main>
 
       </div>
     </div>

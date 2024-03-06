@@ -5,6 +5,8 @@ import LocaleSwitcher from '../Switchers/LocaleSwitcher';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { ColoredLinkButton, RegularLinkButton } from '../customElements/Button/LinkButton';
+import { RegularMenuLink } from '../customElements/Menu/MenuLink';
+import { text } from 'stream/consumers';
 
 export default function Navbar() {
   const t = useTranslations('RootLayout');
@@ -31,9 +33,13 @@ export default function Navbar() {
 
   const links = (
     <>
-      <RegularLinkButton href="/contact/">
-        {t('contact_link')}
-      </RegularLinkButton>
+
+      <RegularMenuLink className='group-hover:block hidden' text={t('clients_link')}>
+        <RegularLinkButton href="/clients/" className='group'>
+          {t('clients_link')}
+        </RegularLinkButton>
+      </RegularMenuLink>
+
       <RegularLinkButton href="/products/" className="border-none text-gray-700 hover:text-gray-900">
         {t('products_link')}
       </RegularLinkButton>
@@ -62,8 +68,8 @@ export default function Navbar() {
             </svg>
           </button>
           <div className={`hidden sm:flex sm:space-x-4 flex-row items-center justify-between ${menuOpen ? 'hidden' : 'flex'}`}>
-          {links}
-        </div>
+            {links}
+          </div>
 
         </div>
         {/* Enlaces (visible en sm y md) */}
@@ -74,7 +80,7 @@ export default function Navbar() {
             {links}
           </div>
         )}
-        
+
       </div>
     </nav>
   );

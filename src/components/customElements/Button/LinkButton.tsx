@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { FaAngleDoubleRight, FaAngleRight, FaArrowRight } from 'react-icons/fa';
+import { FaAngleDoubleRight, FaAngleRight} from 'react-icons/fa';
 
 interface RegularLinkButtonProps {
   href: string;
@@ -50,4 +50,6 @@ const ColoredLinkButton: React.FC<{ href: string; children: React.ReactNode; cla
   );
 };
 
-export { RegularLinkButton, ColoredLinkButton };
+
+
+export { RegularLinkButton, ColoredLinkButton, ArrowLinkButton};
