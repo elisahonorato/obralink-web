@@ -1,8 +1,7 @@
 {
-  "/not-found": "app/not-found.js",
-  "/[locale]/(unauth)/products/[slug]/page": "app/[locale]/(unauth)/products/[slug]/page.js",
   "/[locale]/(unauth)/blog/page": "app/[locale]/(unauth)/blog/page.js",
   "/[locale]/(unauth)/products/page": "app/[locale]/(unauth)/products/page.js",
   "/[locale]/(unauth)/blog/[slug]/page": "app/[locale]/(unauth)/blog/[slug]/page.js",
-  "/[locale]/(unauth)/page": "app/[locale]/(unauth)/page.js"
+  "/[locale]/(unauth)/page": "app/[locale]/(unauth)/page.js",
+  "/[locale]/(unauth)/contact/page": "app/[locale]/(unauth)/contact/page.js"
 }
