@@ -33,7 +33,7 @@ export default function Index() {
       <div className="">
         <h1 className="text-4xl sm:text-6xl w-1/2 sm:mt-20 mt-10">
           {t('title')}
-          <br />
+          <span> </span>
           <TextChange
           texts={words}
           id="typewriter"
